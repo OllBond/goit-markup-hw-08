@@ -1,42 +1,42 @@
-.team {
-    background-color: var(--background-color-btn);
-}
+// .team {
+//     background-color: var(--background-color-btn);
+// }
 
-.section-team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    @include font (16px,400,1.18);
-}
+// .section-team-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 30px;
+//     @include font (16px,400,1.18);
+// }
 
-.section-team-list__item {
-    flex-basis: calc((100% - 90px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--background-color);
-}
+// .section-team-list__item {
+//     flex-basis: calc((100% - 90px) / 4);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     background-color: var(--background-color);
+// }
 
-.section-team-list__wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
+// .section-team-list__wrapper {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//     text-align: center;
+// }
 
-.section-team-list__names {
-    margin-bottom: 10px;
+// .section-team-list__names {
+//     margin-bottom: 10px;
 
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-}
+//     color: var(--title-text-color);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.18;
+// }
 
-.section-team-list__jobs {
-    color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
-}
+// .section-team-list__jobs {
+//     color: var(--primary-text-color);
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 16px;
+// }
