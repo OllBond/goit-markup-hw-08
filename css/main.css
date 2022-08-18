@@ -478,39 +478,6 @@ button {
   height: 24px;
 }
 
-.logo-header-link {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.logo-header-link__web-word {
-  color: var(--accent-text-color);
-}
-
-.logo-header-link__studio-word {
-  color: var(--color-logo);
-}
-
-.logo-footer-link {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-.logo-footer-link .logo-footer-link__web-word {
-  color: var(--accent-text-color);
-}
-.logo-footer-link .logo-footer-link__studio-word {
-  color: var(--background-color);
-}
-
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -519,40 +486,7 @@ button {
   display: flex;
 }
 
-.hero {
-  background-color: var(--background-color-second);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: var(--backround-color-hero);
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-header-bgr.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-title {
-  width: 696px;
-  color: var(--background-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero__hero-title {
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .our-benefits-list {
     display: flex;
     flex-wrap: wrap;
@@ -561,12 +495,14 @@ button {
 @media screen and (min-width: 1200px) {
   .our-benefits-list {
     display: flex;
+    gap: 30px;
   }
 }
 
-.our-benefits-list__item {
-  flex-basis: calc((100% - 90px) / 3);
-  width: 270px;
+@media screen and (max-width: 1199px) {
+  .our-benefits-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-benefits-list__item {
@@ -575,16 +511,31 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .our-benefits-list__item {
-    flex-basis: 25%;
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
 .our-benefits-list__icons-wrapper {
-  width: 270px;
-  height: 120px;
   background-color: var(--background-color-btn);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .our-benefits-list__icons-wrapper {
+    width: 450px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-benefits-list__icons-wrapper {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-benefits-list__icons-wrapper {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .our-benefits-list__icon {
@@ -601,14 +552,9 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .our-benefits-list__title {
-    flex-basis: 50%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-benefits-list__title {
-    flex-basis: 25%;
+    text-align: center;
   }
 }
 
@@ -617,14 +563,4 @@ button {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-@media screen and (min-width: 768px) {
-  .our-benefits-list__text {
-    flex-basis: 50%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-benefits-list__text {
-    flex-basis: 25%;
-  }
 }/*# sourceMappingURL=main.css.map */
