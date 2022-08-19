@@ -1,12 +1,13 @@
 .our-benefits-list {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -17,6 +18,7 @@
       margin-bottom: 30px;
     }
   }
+
   &:nth-child(odd) {
     @media screen and (max-width: 1199px) {
       margin-right: 15px;
@@ -24,7 +26,7 @@
   }
 
   &:nth-child(even) {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-left: 15px;
     }
   }
@@ -33,9 +35,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 90px) / 3);
-    width: 270px;
+
+    width: calc((100% - 6 * 15px) / 4);
+    // width: calc((100% - кіл-сть маржинов у рядку  * значення маржина) / кіл-сть елементів у рядку)
+   margin: 0 auto; 
   }
+  
 }
 
 .our-benefits-list__icons-wrapper {
@@ -60,6 +65,7 @@
     height: 120px;
   }
 }
+
 
 .our-benefits-list__icon {
   width: 70px;
