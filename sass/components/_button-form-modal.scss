@@ -1,51 +1,51 @@
-.form-btn-modal {
-    transition: background-color var(--timing-duration) var(--timing-function);
-    align-self: center;
-    min-width: 200px;
-    height: 50px;
+// .form-btn-modal {
+//     transition: background-color var(--timing-duration) var(--timing-function);
+//     align-self: center;
+//     min-width: 200px;
+//     height: 50px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
 
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
 
-    color: var(--background-color);
-    background-color: var(--accent-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
+//     color: var(--background-color);
+//     background-color: var(--accent-text-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     cursor: pointer;
+//     border: none;
     
-    &:hover,
-    &:focus {
-    background-color: var(--button-order-hover);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-}
+//     &:hover,
+//     &:focus {
+//     background-color: var(--button-order-hover);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// }
+// }
 
-.button-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
+// .button-close {
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     display: flex;
 
-    justify-content: center;
-    align-items: center;
+//     justify-content: center;
+//     align-items: center;
 
-    padding: 0;
-    width: 30px;
-    height: 30px;
+//     padding: 0;
+//     width: 30px;
+//     height: 30px;
 
-    background: var(--background-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
+//     background: var(--background-color);
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 50%;
+//     cursor: pointer;
 
-    &:hover>.button-close__icon,
-    &:focus>.button-close__icon {
-    fill: var(--accent-text-color);
-}
-}
+//     &:hover>.button-close__icon,
+//     &:focus>.button-close__icon {
+//     fill: var(--accent-text-color);
+// }
+// }
