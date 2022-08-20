@@ -1,22 +1,30 @@
 @media screen and (max-width:767px) {
     .our-contacts-list {
     display: none;
-} 
 }
-.mobile-menu-open {
-background-color: transparent;
-border: none;
-padding: 0;
-line-height: 0;
-// line-height: 0; щоб прибрати хвостики, міжрядковий інтервал або height:0; 
+
+}
+
+
+@media screen and (min-width:768px) {
+    .mobile-menu-open {
+        display: none;
+    } 
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+    .our-contacts-list__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .our-contacts-list__icon {
+        margin-right: 8px; 
+    }
 }
 
 
 // .our-contacts-list {
 //     display: flex;
-
-//     & .item:not(:last-child) {
-//             }
 // }
 
 // .page-header__our-contacts-list {
