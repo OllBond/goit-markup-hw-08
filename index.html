@@ -38,12 +38,12 @@
               <a class="site-nav-list__link link" href="#" >Контакты</a></li>
           </ul>
         </nav>
-        <button class="mobile-menu-open" type="button">
+        <!-- Burger -->
+        <button class="mobile-menu-open" type="button" data-menu-open>
           <svg class="mobile-menu-open__icon" width="40" height="40">
             <use href="./images/sprite.svg#burger-icon"></use>
           </svg>
         </button>
-
         <ul class="our-contacts-list page-header__our-contacts-list list">
           <li class="our-contacts-list__item">
             <a class="our-contacts-list__link link href="mailto:info@example.com" ">
@@ -61,7 +61,31 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu"></div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        <ul class=" list">
+          <li>Студия</li>
+          <li>Портфолио</li>
+          <li>Контакты</li>
+        </ul>
+        <ul class=" list">
+          <li>+38 096 111 11 11</li>
+          <li>info@devstudio.com</li>
+        </ul>
+        <ul class=" list">
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+        </ul>
+        </div>
+      </div>
     </header>
     <!--Main content-->
     <main>
@@ -450,7 +474,7 @@
         </div>
       </section> -->
     </main>
-    <!--Footer-->
+    <!-- Footer -->
     <!-- <footer class="address">
       <div class="container footer-container">
         <div class="footer-contacts">
@@ -510,8 +534,8 @@
             </li>
           </ul>
         </div> -->
-        <!--Footer form-->
-        <!-- <div class="footer-form">
+        <!-- Footer form-->
+        <!-- <!-- <div class="footer-form">
           <p class="footer-form-title">Подпишитесь на рассылку</p>
           <form class="footer-form-wrap">
             <input class="footer-form-wrap__input" type="text" placeholder="E-mail" required />
@@ -523,9 +547,11 @@
             </button>
           </form>
         </div> -->
-        <!--/Footer form-->
-      <!-- </div>
-    </footer>
-    <script src="./js/modal.js"></script> -->
+        <!-- /Footer form-->
+      <!-- </div> -->
+    <!-- </footer> -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    
   </body>
 </html>
