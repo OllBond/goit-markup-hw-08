@@ -1,94 +1,86 @@
-.our-benefits-list {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+// .our-benefits-list {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     gap: 30px;
+//   }
+// }
 
-.our-benefits-list__item {
+// .our-benefits-list__item {
 
-  &:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 30px;
-    }
-  }
+//   &:not(:last-child) {
+//     @media screen and (max-width: 1199px) {
+//       margin-bottom: 30px;
+//     }
+//   }
 
-  &:nth-child(odd) {
-    @media screen and (max-width: 1199px) {
-      margin-right: 15px;
-    }
-  }
+//   &:nth-child(odd) {
+//     @media screen and (max-width: 1199px) {
+//       margin-right: 15px;
+//     }
+//   }
 
-  &:nth-child(even) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 15px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 15px) / 2);
-  }
-
-  @media screen and (min-width: 1200px) {
-
-    width: calc((100% - 6 * 15px) / 4);
-    // width: calc((100% - кіл-сть маржинов у рядку  * значення маржина) / кіл-сть елементів у рядку)
-   margin: 0 auto; 
-  }
+//   &:nth-child(even) {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//       margin-left: 15px;
+//     }
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: calc((100% - 2 * 15px) / 2);
+//   }
   
-}
+// }
 
-.our-benefits-list__icons-wrapper {
-  @extend %align;
+// .our-benefits-list__icons-wrapper {
+//   @extend %align;
 
-  background-color: var(--background-color-btn);
-  border-radius: 4px;
-  margin-bottom: 30px;
+//   background-color: var(--background-color-btn);
+//   border-radius: 4px;
+//   margin-bottom: 30px;
 
-  @media screen and (max-width: 768px) {
-    width: 450px;
-    height: 120px;
-  }
+//   @media screen and (max-width: 768px) {
+//     width: 450px;
+//     height: 120px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//     height: 120px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 120px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//     height: 120px;
+//   }
+// }
 
 
-.our-benefits-list__icon {
-  width: 70px;
-  height: 70px;
-}
+// .our-benefits-list__icon {
+//   width: 70px;
+//   height: 70px;
+// }
 
-.our-benefits-list__title {
-  padding-top: 0px;
-  margin-bottom: 10px;
+// .our-benefits-list__title {
+//   padding-top: 0px;
+//   margin-bottom: 10px;
 
-  color: var(--title-text-color);
-  font-style: Bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+//   color: var(--title-text-color);
+//   font-style: Bold;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
-}
+//   @media screen and (max-width: 767px) {
+//     text-align: center;
+//   }
+// }
 
-.our-benefits-list__text {
-  @include font(14px, 400, 1.71);
+// .our-benefits-list__text {
+//   @include font(14px, 400, 1.71);
 
-  letter-spacing: 0.03em;
-}
+//   letter-spacing: 0.03em;
+// }
