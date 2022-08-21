@@ -100,6 +100,11 @@ button {
   justify-content: space-between;
 }
 
+.mobile-menu__container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -231,6 +236,14 @@ button {
   }
   .our-contacts-list__icon {
     margin-right: 8px;
+  }
+  .our-contacts-list__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+  .our-contacts-list__icon-phone {
+    width: 10px;
+    height: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
