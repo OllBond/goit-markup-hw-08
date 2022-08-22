@@ -37,6 +37,11 @@
               <a class="site-nav-list__link link" href="#" >Контакты</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-open" type="button" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="our-contacts-list page-header__our-contacts-list list">
           <li class="our-contacts-list__item">
             <a class="our-contacts-list__link link href="mailto:info@example.com" ">
@@ -54,11 +59,57 @@
           </li>
         </ul>
       </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu" data-menu>
+              <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                  <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu-list__link mobile-menu-list__link_studio_active link" href="./index.html">Студия</a>
+                  </li>
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu-list__link link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu-list__link link" href="#">Контакты</a>
+                  </li>
+              </ul>
+            </nav>
+              <ul class="mobile-menu-contacts-list list">
+                <li class="mobile-menu-contacts-list__item">
+                  <a class="mobile-menu-contacts-list__link mobile-menu-contacts-list__link-tel_active  link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contacts-list__item">
+                  <a class="mobile-menu-contacts-list__link mobile-menu-contacts-list__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      
+                </li>
+              </ul>
+              <ul class="mobile-menu-social-list list">
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link">Instagram</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link">Twitter</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link">Facebook</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link">LinkedIn</a>
+                </li>
+              </ul>
+              </div>
+            </div>
     </header>
     <!--Main content-->
     <main>
       <section class="section">
-        <div class="container">
+        <div class="container container-portfolio">
           <h1 class="visually-hidden">Примеры работ</h1>
           <ul class="button-portfolio-list list">
             <li>
@@ -86,7 +137,32 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img src="./images/texnokryak.jpg" alt="our people" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/texnokryak-desktop.webp 1x, ./images/texnokryak-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/texnokryak-desktop.jpg 1x, ./images/texnokryak-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/texnokryak-tablet.webp 1x, ./images/texnokryak-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/texnokryak-tablet.jpg 1x, ./images/texnokryak-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/texnokryak-mobail.webp 1x, ./images/texnokryak-mobail@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/texnokryak-mobail.jpg 1x, ./images/texnokryak-mobail@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                  <img src="./images/texnokryak.jpg" alt="our people" />
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -102,12 +178,35 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
+                  <picture>
+                    <source srcset="./images/new-orlean-desktop.webp 1x, ./images/new-orlean-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/new-orlean-desktop.jpg 1x, ./images/new-orlean-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/new-orlean-tablet.webp 1x, ./images/new-orlean-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/new-orlean-tablet.jpg 1x, ./images/new-orlean-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/new-orlean-mobile.webp 1x, ./images/new-orlean-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/new-orlean-mobile.jpg 1x, ./images/new-orlean-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
                   <img
                     src="./images/poster-new-orlean.jpg"
                     alt="poster new orlean"
-                    width="370"
-                    height="294"
                   />
+                </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -123,12 +222,36 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img
+                  <picture>
+                    <source srcset="./images/sea-food-desktop.webp 1x, ./images/sea-food-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/sea-food-desktop.jpg 1x, ./images/sea-food-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/sea-food-tablet.webp 1x, ./images/sea-food-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/sea-food-tablet.jpg 1x, ./images/sea-food-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/sea-food-mobail.webp 1x, ./images/sea-food-mobail@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/sea-food-mobail.jpg 1x, ./images/sea-food-mobail@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                    
+                    <img
                     src="./images/sea-food.jpg"
                     alt="poster sea food restaurant"
-                    width="370"
-                    height="294"
                   />
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -144,7 +267,32 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img src="./images/project-prime.jpg" alt="headphone" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/prime-desktop.webp 1x, ./images/prime-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/prime-desktop.jpg 1x, ./images/prime-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/prime-tablet.webp 1x, ./images/prime-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/prime-tablet.jpg 1x, ./images/prime-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/prime-mobile.webp 1x, ./images/prime-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                  <img src="./images/project-prime.jpg" alt="headphone" />
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -160,7 +308,32 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img src="./images/project-boxes.jpg" alt="boxes" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/boxes-desktop.webp 1x, ./images/boxes-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/boxes-desktop.jpg 1x, ./images/boxes-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/boxes-tablet.webp 1x, ./images/boxes-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/boxes-tablet.jpg 1x, ./images/boxes-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/boxes-mobile.webp 1x, ./images/boxes-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                    <img src="./images/project-boxes.jpg" alt="boxes" />
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -176,12 +349,35 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
+                  <picture>
+                    <source srcset="./images/borders-desktop.webp 1x, ./images/borders-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/borders-desktop.jpg 1x, ./images/borders-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/border-tablet.webp 1x, ./images/border-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/border-tablet.jpg 1x, ./images/border-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/borders-mobile.webp 1x, ./images/borders-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/borders-mobile.jpg 1x, ./images/borders-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
                   <img
                     src="./images/inspirations.jpg"
                     alt="computer monitor"
-                    width="370"
-                    height="294"
                   />
+                </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -197,12 +393,35 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
+                  <picture>
+                    <source srcset="./images/limited-desktop.webp 1x, ./images/limited-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/limited-desktop.jpg 1x, ./images/limited-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/limited-tablet.webp 1x, ./images/limited-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/limited-tablet.jpg 1x, ./images/limited-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/limited-mobile.webp 1x, ./images/limited-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/limited-mobile.jpg 1x, ./images/limited-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
                   <img
                     src="./images/limited-edition.jpg"
                     alt="limited edition"
-                    width="370"
-                    height="294"
                   />
+                </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -218,7 +437,32 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img src="./images/project-lab.jpg" alt="lab el tag" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/lab-desktop.webp 1x, ./images/lab-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/lab-desktop.jpg 1x, ./images/lab-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/lab-tablet.webp 1x, ./images/lab-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/lab-tablet.jpg 1x, ./images/lab-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/lab-mobile.webp 1x, ./images/lab-mobile@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                  <img src="./images/project-lab.jpg" alt="lab el tag"/>
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -234,7 +478,32 @@
             <li class="our-projects-list__item">
               <a class="our-projects-list__link link" href="#">
                 <div class="our-projects-overlay">
-                  <img src="./images/growing-business.jpg" alt="laptop" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/business-desktop.webp 1x, ./images/business-desktop@2x.webp 2x"  
+                    media="(min-width:1200px)"
+                    type="image/web"
+                    />
+                    <source srcset="./images/business-desktop.jpg 1x, ./images/business-desktop@2x.jpg 2x" 
+                    media="(min-width:1200px)"
+                      />
+    
+                    <source srcset="./images/business-tablet.webp 1x, ./images/business-tablet@2x.webp 2x," 
+                    media="(min-width:768px)"
+                    type="image/web"    
+                      />
+                    <source srcset="./images/business-tablet.jpg 1x, ./images/business-tablet@2x.jpg 2x,"                 
+                    media="(min-width:768px)"  
+                      />
+    
+                    <source srcset="./images/business-mobail.webp 1x, ./images/business-mobail@2x.webp 2x,"
+                    media="(max-width:767px)"
+                    type="image/web" 
+                      />
+                    <source srcset="./images/business-mobail.jpg 1x, ./images/business-mobail@2x.jpg 2x,"
+                    media="(max-width:767px)"  
+                      />
+                  <img src="./images/growing-business.jpg" alt="laptop" />
+                  </picture>
                   <p class="our-projects-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -327,5 +596,6 @@
         <!--/Footer form-->
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

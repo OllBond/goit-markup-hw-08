@@ -36,12 +36,18 @@ flex-direction: column;
 }
 
 @media screen and (min-width:480px) {
-.container-section-team {
+.container-section-team,
+.container-portfolio {
     flex-direction: column;
     align-items: center;
 }    
 }
-
+// @media screen and (min-width:480px) {
+//     .container-portfolio {
+//     flex-direction: column;
+//     align-items: center;
+//     }
+// }
 // .container-contacts {
 //     display: flex;
 // }
