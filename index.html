@@ -183,7 +183,7 @@
       </section>
       <!--/Form modal window -->
       <!-- Our benefits -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="our-benefits-list list features">
@@ -243,19 +243,22 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Our work -->
-      <!-- <section class="section our-work-section">
-        <div class="container">
+      <section class="section our-work-section">
+        <div class="container container-our-work">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-our-work-list list">
             <li class="section-our-work-list__item">
-              <img src="./images/image1.jpeg" alt="work on the computer" width="370" height="294" />
+              <img 
+              srcset="./images/work-comp-desktop@2x.jpg 2x"
+              src="./images/work-comp-desktop@1x.jpg" alt="work on the computer" width="370" height="294" />
               <p class="section-our-work-list__text">Десктопные приложения</p>
             </li>
             <li class="section-our-work-list__item">
               <img
-                src="./images/image2.jpeg"
+                srcset="./images/work-mobile-desktop@2x.jpg 2x"
+                src="./images/work-mobile-desktop@1x.jpg"
                 alt="mobile application development"
                 width="370"
                 height="294"
@@ -264,7 +267,8 @@
             </li>
             <li class="section-our-work-list__item">
               <img
-                src="./images/image3.jpeg"
+                srcset="./images/work-tablet-desktop@2x.jpg 2x "
+                src="./images/work-tablet-desktop@1x.jpg"
                 alt="palette on the tablet"
                 width="370"
                 height="294"
@@ -273,19 +277,43 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Our team -->
-      <!-- <section class="section team">
-        <div class="container">
+      <section class="section team">
+        <div class="container container-section-team">
           <h2 class="section-title">Наша команда</h2>
           <ul class="section-team-list list">
             <li class="section-team-list__item">
+              <picture>
+                <source srcset="./images/demyanenko-desktop@1x.webp 1x, ./images/demyanenko-desktop@2x.webp 2x"  
+                media="(min-width:1200px)"
+                type="image/web"
+                />
+                <source srcset="./images/demyanenko-desktop@1x.jpg 1x, ./images/demyanenko-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                  />
+
+                <source srcset="./images/demyanenko-tablet@1x.webp 1x, ./images/demyanenko-tablet@2x.webp 2x," 
+                media="(min-width:768px)"
+                type="image/web"    
+                  />
+                <source srcset="./images/demyanenko-tablet@1x.jpg 1x, ./images/demyanenko-tablet@2x.jpg 2x,"                 
+                media="(min-width:768px)"  
+                  />
+
+                <source srcset="./images/demyanenko-mobail@1x.webp 1x, ./images/demyanenko-mobail@2x.webp 2x,"
+                media="(max-width:767px)"
+                type="image/web" 
+                  />
+                <source srcset="./images/demyanenko-mobail@1x.jpg 1x, ./images/demyanenko-mobail@2x.jpg 2x,"
+                media="(max-width:767px)"  
+                  />
               <img
                 src="./images/foto1.jpg"
                 alt="Ihor Demyanenko Product Designer"
-                width="270"
-                height="260"
+
               />
+            </picture>
               <div class="section-team-list__wrapper">
                 <h3 class="section-team-list__names">Игорь Демьяненко</h3>
                 <p class="section-team-list__jobs">Product Designer</p>
@@ -322,12 +350,35 @@
               </div>
             </li>
             <li class="section-team-list__item">
+              <picture>
+                <source srcset="./images/repina-desktop@1x.webp 1x, ./images/repina-desktop@2x.webp 2x"  
+                media="(min-width:1200px)"
+                type="image/web"
+                />
+                <source srcset="./images/repina-desktop@1x.jpg 1x, ./images/repina-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                  />
+
+                <source srcset="./images/repina-tablet@1x.webp 1x, ./images/repina-tablet@2x.webp 2x," 
+                media="(min-width:768px)"
+                type="image/web"    
+                  />
+                <source srcset="./images/repina-tablet@1x.jpg 1x, ./images/repina-tablet@2x.jpg 2x,"                 
+                media="(min-width:768px)"  
+                  />
+
+                <source srcset="./images/repina-mobail@1x.webp 1x, ./images/repina-mobail@2x.webp 2x,"
+                media="(max-width:767px)"
+                type="image/web" 
+                  />
+                <source srcset="./images/repina-mobail@1x.jpg 1x, ./images/repina-mobail@2x.jpg 2x,"
+                media="(max-width:767px)"  
+                  />
               <img
                 src="./images/foto2.jpg"
                 alt="Olga Repina Product Designer"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="section-team-list__wrapper">
                 <h3 class="section-team-list__names">Ольга Репина</h3>
                 <p class="section-team-list__jobs">Product Designer</p>
@@ -364,12 +415,35 @@
               </div>
             </li>
             <li class="section-team-list__item">
+              <picture>
+                <source srcset="./images/tarasov-desktop@1x.webp 1x, ./images/tarasov-desktop@2x.webp 2x"  
+                media="(min-width:1200px)"
+                type="image/web"
+                />
+                <source srcset="./images/tarasov-desktop@1x.jpg 1x, ./images/tarasov-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                  />
+
+                <source srcset="./images/tarasov-tablet@1x.webp 1x, ./images/tarasov-tablet@2x.webp 2x," 
+                media="(min-width:768px)"
+                type="image/web"    
+                  />
+                <source srcset="./images/tarasov-tablet@1x.jpg 1x, ./images/tarasov-tablet@2x.jpg 2x,"                 
+                media="(min-width:768px)"  
+                  />
+
+                <source srcset="./images/tarasov-mobail@1x.webp 1x, ./images/tarasov-mobail@2x.webp 2x,"
+                media="(max-width:767px)"
+                type="image/web" 
+                  />
+                <source srcset="./images/tarasov-mobail@1x.jpg 1x, ./images/tarasov-mobail@2x.jpg 2x,"
+                media="(max-width:767px)"  
+                  />
               <img
                 src="./images/foto3.jpg"
                 alt="Nikolay Tarasov Marketing"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="section-team-list__wrapper">
                 <h3 class="section-team-list__names">Николай Тарасов</h3>
                 <p class="section-team-list__jobs">Marketing</p>
@@ -406,12 +480,35 @@
               </div>
             </li>
             <li class="section-team-list__item">
+              <picture>
+                <source srcset="./images/ermakov-desktop@1x.webp 1x, ./images/ermakov-desktop@2x.webp 2x"  
+                media="(min-width:1200px)"
+                type="image/web"
+                />
+                <source srcset="./images/ermakov-desktop@1x.jpg 1x, ./images/ermakov-desktop@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                  />
+
+                <source srcset="./images/ermakov-tablet@1x.webp 1x, ./images/ermakov-tablet@2x.webp 2x," 
+                media="(min-width:768px)"
+                type="image/web"    
+                  />
+                <source srcset="./images/ermakov-tablet@1x.jpg 1x, ./images/ermakov-tablet@2x.jpg 2x,"                 
+                media="(min-width:768px)"  
+                  />
+
+                <source srcset="./images/ermakov-mobail@1x.webp 1x, ./images/ermakov-mobail@2x.webp 2x,"
+                media="(max-width:767px)"
+                type="image/web" 
+                  />
+                <source srcset="./images/ermakov-mobail@1x.jpg 1x, ./images/ermakov-mobail@2x.jpg 2x,"
+                media="(max-width:767px)"  
+                  />
               <img
                 src="./images/foto4.jpg"
                 alt="Mykhail Ermakov UI Designer"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="section-team-list__wrapper">
                 <h3 class="section-team-list__names">Михаил Ермаков</h3>
                 <p class="section-team-list__jobs">UI Designer</p>
@@ -449,7 +546,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Regular clients -->
       <!-- <section class="section-regular-clients section">
         <div class="container">

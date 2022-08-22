@@ -30,6 +30,18 @@
 .container-hero {
     flex-direction: column;
 }
+
+.container-our-work {
+flex-direction: column;
+}
+
+@media screen and (min-width:480px) {
+.container-section-team {
+    flex-direction: column;
+    align-items: center;
+}    
+}
+
 // .container-contacts {
 //     display: flex;
 // }
