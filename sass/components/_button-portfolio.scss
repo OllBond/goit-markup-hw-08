@@ -1,10 +1,36 @@
+@media screen and (min-width:480px) {
+    .button-portfolio-list {
+        display: flex;
+        
+    }
+}
 
+@media screen and (max-width:767px) {
+    .button-portfolio-list {
+        
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }    
+}
+@media screen and (max-width:1199px) {
+    .button-portfolio-list {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .button-portfolio-list {
+        margin-bottom: 50px;
+    }
+}
 
 .button-portfolio-list {
     // display: flex;
+    // justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
-    justify-content: center;
+    // margin-bottom: 50px;
+    
     
     .button-portfolio {
     transition: background-color var(--timing-duration) var(--timing-function),
@@ -40,6 +66,7 @@
 }
 }
 }
+
 
 
 
