@@ -882,7 +882,8 @@ button {
     line-height: 1.18;
     color: var(--color-btn-portfolio);
   }
-  .mobile-menu-list__link_studio_active {
+  .mobile-menu-list__link_studio_active,
+.mobile-menu-list__link_portfolio_active {
     color: var(--accent-text-color);
   }
   .mobile-menu-list__item:not(:last-child) {
