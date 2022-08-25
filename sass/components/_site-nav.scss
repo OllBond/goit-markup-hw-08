@@ -137,19 +137,19 @@ letter-spacing: 0.02em;
 // }
 
 
-// .portfolio-link {
-//     position: relative;
+.portfolio-link {
+    position: relative;
 
-//     &::after {
-//     position: absolute;
-//     bottom: 0;
-//     content: '';
-//     display: block;
-//     width: 78px;
-//     height: 4px;
+    &::after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 78px;
+    height: 4px;
 
-//     background-color: var(--accent-text-color);
-//     border-radius: 2px;
-//     transition: opacity var(--timing-duration) var(--timing-function);
-// }
-// }
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    transition: opacity var(--timing-duration) var(--timing-function);
+}
+}

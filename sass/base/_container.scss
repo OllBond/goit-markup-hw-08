@@ -24,6 +24,19 @@
     justify-content: space-between;
     align-items: baseline;
 }
+@media screen and (min-width:1200px) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:1199px) {
+    .container-contacts {
+    display: flex;
+    align-items: center;
+}
+}
 
 .mobile-menu__container {
     flex-direction: column;
