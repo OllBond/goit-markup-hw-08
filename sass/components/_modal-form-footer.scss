@@ -27,6 +27,7 @@
 
 @media screen and (min-width:1200px) {
     .footer-form-wrap {
+        display: flex;
         gap:12px;
     }
 }
@@ -77,7 +78,7 @@
 
 .btn-form-footer {
     transition: background-color var(--timing-duration) var(--timing-function);
-    // display: flex;
+
     justify-content: center;
 
     gap: 10px;
@@ -115,4 +116,9 @@
         display: flex;
     }
     
+}
+@media screen and (min-width:1200px) {
+    .btn-form-footer {
+        display: flex;
+    }
 }

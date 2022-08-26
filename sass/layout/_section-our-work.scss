@@ -5,6 +5,12 @@
     }
 }
 
+@media screen and (min-width:1200px) {
+    .our-work-section  {
+        padding-top: 0px;
+    }
+}
+
 .section-our-work-list {
     display: flex;
     gap: 30px;

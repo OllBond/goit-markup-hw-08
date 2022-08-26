@@ -713,7 +713,8 @@ button {
 @media screen and (max-width: 446px) {
   .form-modal__field-checkbox {
     margin-bottom: 31px;
-    font-size: 12px;
+    font-size: 7px;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 447px) and (max-width: 1199px) {
@@ -758,6 +759,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .footer-form-wrap {
+    display: flex;
     gap: 12px;
   }
 }
@@ -827,10 +829,9 @@ button {
     display: flex;
   }
 }
-@media screen and (max-width: 767px) {
-  .logo-header-link {
-    padding-top: 16px;
-    padding-bottom: 16px;
+@media screen and (min-width: 1200px) {
+  .btn-form-footer {
+    display: flex;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -991,6 +992,13 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 60px;
+  }
+}
 .hero {
   background-color: var(--background-color-second);
   text-align: center;
@@ -1030,7 +1038,16 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-header-bgr-tablet@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-header-bgr-desktop@1x.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1200px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1600px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-header-bgr-desktop@1x.jpg");
     padding-top: 200px;
@@ -1151,6 +1168,11 @@ button {
 @media screen and (max-width: 1199px) {
   .our-work-section {
     display: none;
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-work-section {
     padding-top: 0px;
   }
 }
