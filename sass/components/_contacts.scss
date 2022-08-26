@@ -26,7 +26,8 @@
 
 .mobile-menu-social-list {
     display: flex;
-    cursor: pointer;
+    flex-wrap: wrap;
+    // cursor: pointer;
 }
 
 .mobile-menu-social-list__item:not(:last-child)::after {
